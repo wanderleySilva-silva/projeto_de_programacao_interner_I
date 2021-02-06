@@ -3,61 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="formulario.css">
-    <title>Formulário de Clientes</title>
+    <link rel="stylesheet" href="css/reset.css"> <!--O reset serve para limpar as configurações padrões do CSS nos navegadores-->
+    <link rel="stylesheet" href="css/projeto.css">
+    <title>Hello Art & Garden</title>
 </head>
 <body>
-    <form action="#" method="post">
-        <fieldset>
-            <fieldset class="grupo">
-                <div class="campo">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" style="width: 10em" value="">
-                </div>
-                <div class="campo">
-                    <label for="snome">Sobrenome</label>
-                    <input type="text" id="snome" name="snome" style="width: 10em" value="">
-                </div>
-            </fieldset>
-            <div class="campo">
-                <label>Sexo</label>
-                <label>
-                    <input type="radio" name="sexo" value="masculino"> Masculino
-                </label>
-                <label>
-                    <input type="radio" name="sexo" value="feminino"> Feminino
-                </label>
-            </div>
-            <div class="campo">
-                <label for="email">E-mail</label>
-                <input type="text" id="email" name="email" style="width: 20em" value="">
-            </div>
-            <div class="campo">
-                <label for="telefone">Telefone</label>
-                <input type="text" id="telefone" name="telefone" style="width: 10em" value="">
-            </div>
+    <section id="topo">
+        <nav>
+            <ul>
+                <li>
+                    <img src="img/hello_art_garden.jpeg" alt="slogan de Hello Art e Garden">
+                </li>
+                <li>
+                    <form action=" " method="post">
+                        <label for="busca">Buscar</label>
+                        <input type="search" id="busca" name="q">
+                        <button type="submit">OK</button>
+                      </form>
+                </li>
+            </ul>
+        </nav>
+        
+    </section>
     
-            <fieldset class="grupo">
-                <div class="campo">
-                    <label for="cidade">Cidade</label>
-                    <input type="text" id="cidade" name="cidade" style="width: 10em" value="">
-                </div>
-                <div class="campo">
-                    <label for="estado">Estado</label>
-                    <select name="estado" id="estado">
-                        <option value="">--</option>
-                        <option value="PR">PR</option>
-                    </select>
-                </div>
-            </fieldset>
+    <header class="verde">
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="https://linktr.ee/hellol.atelier" target="_blank">Produtos e Serviços</a></li>
+                <li><a href="https://www.instagram.com/hellol.atelier/?hl=pt-br" target="_blank">Dicas de Cuidado</a></li>
+                <li><a href="#artes">Cactos e Suculentas</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                <li><a href="formulário.html" target="_blank">Formulário de Clientes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="foto-plantas">
+        <img src="img/cactos.jpg" alt="Cactos e Suculentas">
+    </section>
     
-            <div class="campo">
-                <label for="mensagem">Mensagem</label>
-                <textarea rows="6" style="width: 20em" id="mensagem" name="mensagem"></textarea>
-            </div>
+    <h1 id="titulo">Hello Art e Garden</h1>
     
-            <button type="submit" name="submit">Enviar</button>
-        </fieldset>
-    </form>
+    <section id="sobre" class="container">
+        <div class="sobre-section">
+            <h1>Sobre Nós</h1>
+            <p>Fique a vontade em nossa página, aprecie os nossos produtos e dicas, sinta-se em casa, vamos conversar sobre cactos e suculentas?
+                Seja bem-vindo!
+                A nossa empresa está chegando no mercado para não te vender apenas cactaceas, mas sim, para te vender um momento, uma história e um sentimento. <br>
+                E antes de tudo, gostaria de te receber de braços abertos por aqui! Sou mais uma amante por esse universo e estou tornando o que era apenas um hobby 
+                em uma profissão. <br>
+                Quero te atender e entregar os melhores produtos, o nosso diferencial é a qualidade e o amor que tem em cada detalhe. Irei preparar com carinho o seu 
+                pedido e atender suas dúvidas, desde o seu cacto decorativo até o seu mini jardim, estamos prontos para atender todas as suas reuniões e celebrações.
+                A Hello Art e Garden está feliz em te ver por aqui e eu estou ansiosa para te atender com o que há de melhor no ramo de decorações com cactaceas e bromélias.
+                Nosso atelier é a aproximação dos nossos clientes ao universo verde dessas plantinhas, que faz brotar alegria e encantamento nos nossos jardins e nossos 
+                corações.
+                Os formatos variados dos nossos serviços espalham cactos e suculentas para aqueles que já colecionam ou aqueles que estão iniciando um relacionamento com 
+                elas🌵.
+                Nossas lembrancinhas para eventos, irão fazer você impressionar os seus convidados com bom gosto e elegância.
+                Os nossos mini jardins, são o mais belo encanto para dar vida a sua decoração, desde a sua casa até mesmo o seu Office.
+                .
+                Entre em contato conosco, atendemos encomendas e produtos a pronta entrega para todo o Agreste de Pernambuco.
+            </p>
+        </div>
+    </section>
+    <section id="artes" class="container">
+        <div class="artes-section">
+            <h1>Cactos e Suculentas</h1>
+            <p>
+                <img src="img/cactos_suculentas_banner.jpg" alt="cactos e suculentas">
+                As suculentas são plantas que em geral conseguem sobreviver à falta de água e luz, e são capazes de armazenar 
+                água nas raízes, caules, troncos ou folha, característica esta que as protege das altas temperaturas e do clima 
+                seco das regiões da África e da América, onde surgiram.<br>
+                Os cactos são uma das espécies preferidas de quem gosta de cultivar versões miniatura para decorar ambientes. 
+                Não possuem folhas, e somente algumas dão flores quando adultos, geralmente uma vez por ano, na mesma época. A planta possui uma 
+                estrutura que permanece fechada sob sol forte, e sua pele é bem espessa e revestida, tudo para perder o mínimo de líquido possível. 
+                A grande maioria tem espinhos, alguns agudos e longos, outros são também cobertos de pelos. Os espinhos dos cactos servem de proteção
+                contra animais, promovem sombra do sol intenso e impedem a circulação de ar pela epiderme da planta evitando a perda de água.
+
+            </p>
+        </div> 
+    </section>
+    
+    <section id="curiosidades" class="container">
+        <div class="curio-section">
+            <h1>Curiosidades</h1>
+            <p>
+                1) Seu vaso é mais importante do que você imagina🌵⚠️<br> Muita água e muito sol podem atrapalhar o crescimento das suculentas. 
+                Potes de plástico não são os mais recomendados e um bom sistema de drenagem é necessário, mesmo em se tratando de plantas que 
+                precisam de menos água que outras. Também tome cuidado para não subestimar o tamanho do vaso, uma vez que raízes saudáveis precisam 
+                de espaço para crescer bem.
+                Gostou dessa curiosidade? Compartilhe com os seus amigos e não esquece de curtir e comentar😍
+                Até a próxima!!
+            </p>
+
+            <p>
+                2) Embora nem todas as suculentas sejam venenosas, é uma boa ideia conhecer os poucos que são e que tipo de ameaça podem representar 
+                para os seres humanos e animais.
+                Se você tem cães ou gatos, ou qualquer outro animal que passeia pela sua casa, ou perto de seu jardim suculento, é uma ótima ideia 
+                procurar o tipo de suculentas que você possui e ver qual ameaça em potencial eles representam para seus animais. Enquanto muitos 
+                animais são espertos o suficiente para evitar plantas que podem deixá-los doentes, nem todos o farão.
+            </p>
+            <p>
+                3) Eles são uma boa fonte de proteínas e podem ser usados em várias receitas. No Brasil, já existem vários produtos feitos a partir da 
+                planta, como geleias, doces e até cerveja. Mas cuidado, é preciso estar atento e ter o devido conhecimento, pois algumas espécies podem 
+                ser venenosas.
+            </p>
+            <p>
+                4) Os cactos são suculentas, pois têm 92% do seu interior constituído por água, o que diferencia são as folhas, que para os cactos são os 
+                espinhos.
+            </p>
+        </div>
+    </section>
+    <footer class="contato">
+        <p>Meios de Comunicação</p>
+            <nav>
+                <ul>
+                    <li class="insta"><a href="https://www.instagram.com/hellol.atelier/?hl=pt-br" target="_blank"><img src="img/instagram-logo.png" alt=""></a></li>
+                    <li class="whats"><a href="https://linktr.ee/hellol.atelier" target="_blank"><img src="img/whatsApp.png" alt=""></a></li>
+                </ul>
+            </nav>
+            <a id="voltar" href="#topo">Voltar ao topo</a>
+    </footer>
 </body>
 </html>
