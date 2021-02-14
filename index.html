@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css"> <!--O reset serve para limpar as configurações padrões do CSS nos navegadores-->
     <link rel="stylesheet" href="css/projeto.css">
-    <title>Hello Art & Garden</title>
+    <title>Hello Art e Garden</title>
 </head>
 <body>
     <section id="topo">
@@ -119,11 +119,21 @@
         <p>Meios de Comunicação</p>
             <nav>
                 <ul>
-                    <li class="insta"><a href="https://www.instagram.com/hellol.atelier/?hl=pt-br" target="_blank"><img src="img/instagram-logo.png" alt=""></a></li>
-                    <li class="whats"><a href="https://linktr.ee/hellol.atelier" target="_blank"><img src="img/whatsApp.png" alt=""></a></li>
+                    <li class="insta"><a href="https://www.instagram.com/hellol.atelier/?hl=pt-br" target="_blank"><img src="img/instagram-logo.png" alt="Logo do Instagram"></a></li>
+                    <li class="whats"><a href="https://linktr.ee/hellol.atelier" target="_blank"><img src="img/whatsApp.png" alt="Logo do WhatsApp"></a></li>
+                    <li class="subir"><a href="#">Voltar ao topo</a></li>   
                 </ul>
             </nav>
-            <a id="voltar" href="#topo">Voltar ao topo</a>
+            
     </footer>
+    <script>
+        $(document).ready(function() {
+            $('.subir').click(function(){
+                $('html, body').animate({scrollTop:0}, 'slow');
+                return false;
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </body>
 </html>

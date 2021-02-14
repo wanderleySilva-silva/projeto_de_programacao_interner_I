@@ -117,16 +117,16 @@ footer p{
 .insta img{
     margin-left: 42em;
     width: 36px;
-    margin-bottom: 1em;
 }
 
 .whats img{
     margin-left: 2em;
     width: 40px;
-    margin-bottom: 1em;
+    margin-right: 30em;
 }
-footer #voltar{
+
+.subir{
+	bottom: 2px;
+    margin-left: 80px;
     font-weight: bold;
-    margin-left: 83em;
-    color: black;
 }
